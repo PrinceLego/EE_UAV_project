@@ -65,29 +65,6 @@
       \verb https://www.cna.com.tw/news/asoc/202210030248.aspx
       \endverb
     \endentry
-    \entry{tai_2021}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=29f3f9509a9448674f7207712943dd0d}{%
-           family={臺中市政府全球資訊網},
-           familyi={臺\bibinitperiod}}}%
-      }
-      \strng{namehash}{29f3f9509a9448674f7207712943dd0d}
-      \strng{fullhash}{29f3f9509a9448674f7207712943dd0d}
-      \strng{bibnamehash}{29f3f9509a9448674f7207712943dd0d}
-      \strng{authorbibnamehash}{29f3f9509a9448674f7207712943dd0d}
-      \strng{authornamehash}{29f3f9509a9448674f7207712943dd0d}
-      \strng{authorfullhash}{29f3f9509a9448674f7207712943dd0d}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{year}{2021}
-      \verb{urlraw}
-      \verb https://www.taichung.gov.tw/1783403/post
-      \endverb
-      \verb{url}
-      \verb https://www.taichung.gov.tw/1783403/post
-      \endverb
-    \endentry
   \enddatalist
 \endrefsection
 \endinput

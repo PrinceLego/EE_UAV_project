@@ -1,18 +1,19 @@
 # Fdb version 4
-["biber NSTC_project"] 1738329404.50904 "NSTC_project.bcf" "NSTC_project.bbl" "NSTC_project" 1738329410.65363 0
-  "NSTC_project.bcf" 1738329410.17192 107161 d47f049fb7ca773b9aed759056a91c16 "xelatex"
-  "references.bib" 1738329404.23409 2927 6aec12b0730359e4e0359aa1a8ecee36 ""
+["biber NSTC_project"] 0 "NSTC_project.bcf" "NSTC_project.bbl" "NSTC_project" 1738349110.92347 0
+  "NSTC_project.bcf" 0 -1 0 "xelatex"
+  "NSTC_project.bib" 1738335540.0098 2380 dbdaf9ca79eb012e50eaa1c23a0601ca ""
+  "your_bib_file.bib" 0 -1 0 ""
   (generated)
   "NSTC_project.bbl"
   "NSTC_project.blg"
   (rewritten before read)
-["xdvipdfmx"] 1738329410.22216 "NSTC_project.xdv" "NSTC_project.pdf" "NSTC_project" 1738329410.65447 0
-  "NSTC_project.xdv" 1738329410.17273 27604 2fcaa0bb1cf563b2a181c22390cb5cfd "xelatex"
+["xdvipdfmx"] 1738349110.21421 "NSTC_project.xdv" "NSTC_project.pdf" "NSTC_project" 1738349110.92796 0
+  "NSTC_project.xdv" 1738349109.9498 40132 e45f30da024b632cf299052284492c22 "xelatex"
   (generated)
   "NSTC_project.pdf"
   (rewritten before read)
-["xelatex"] 1738329409.133 "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" "NSTC_project.xdv" "NSTC_project" 1738329410.6537 0
-  "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" 1738329404.3557 6424 61a1dcf0493b73082f7f621548bf36ca ""
+["xelatex"] 1738349107.56594 "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" "NSTC_project.xdv" "NSTC_project" 1738349110.92397 0
+  "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" 1738349103.205 11514 49f5be4d83476370f16fad8aef4189b4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm" 1254269338 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
@@ -42,6 +43,9 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty" 1705352648 5319 2b738d02ce36ada6dcdd9534940db0ee ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/size12.clo" 1705352648 8449 f07039d8e4e89f21078d9b5137579bfc ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd" 1705352648 2430 fce77d7e103eb98b6c4d486ae1d466c0 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx" 1638912315 20021 af496425072862e81e424c104c403595 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx" 1638912315 4682 63056ede870333cd64f17ee967145cf9 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx" 1342308459 92 7cdbb04a1e32fba0fbb91b6e6d123497 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx" 1609451401 1818 9ed166ac0a9204a8ebe450ca09db5dde ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/standard.bbx" 1609451401 25680 409c3f3d570418bc545e8065bebd0688 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.cfg" 1342308459 69 249fa6df04d948e51b6d5c67bea30c42 ""
@@ -51,9 +55,10 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-compat.def" 1643926307 13919 5426dbe90e723f089052b4e908b56ef9 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-dm.def" 1643926307 32455 8d3e554836db11aab80a8e11be62e1b1 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-unicode.def" 1609451401 3786 1f89d14780f0ad89ab94652b37f4e9b8 ""
-  "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx" 1678141846 4629 cda468e8a0b1cfa0f61872e171037a4b ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx" 1678141846 10425 7de071597dabda19c14ff0780122d6d4 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/english.lbx" 1643926307 39965 48ce9ce3350aba9457f1020b1deba5cf ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/cjk/texinput/CJKfntef.sty" 1634853225 12851 25a9b5cc006609feb5c9a20ce24a5392 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/comment/comment.sty" 1472166125 10197 204f75d5d8d88aa345a8c402e879e63b ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg" 1429144587 7068 06f8d141725d114847527a66439066b6 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.def" 1663185836 21994 2bc2a882df92d97dbce35c06bb1d3541 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.sty" 1663185836 62761 3c92d495a9e03d7254b9a3266aa17164 ""
@@ -93,12 +98,11 @@
   "/usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf" 1708706663 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "/usr/local/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1737650810 10850157 bde4cfcbaa765257cb63cb49a5eb9e78 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "NSTC_project.aux" 1738329410.17045 1727 365e9aa35e4d1a0a6b355a742fc31916 "xelatex"
-  "NSTC_project.bbl" 1738329407.79867 466 ee04f40f768daeed26442158e95aba61 "biber NSTC_project"
-  "NSTC_project.run.xml" 1738329410.17257 2396 b0fc572578a42846eda76bf4e5a485de "xelatex"
-  "NSTC_project.tex" 1738329404.3557 6424 61a1dcf0493b73082f7f621548bf36ca ""
-  "NSTC_project.toc" 1738329410.17268 500 752947728e09167c1c00efa809f5b971 "xelatex"
-  "截圖 2025-01-24 03.21.17.png" 1737660127.031 137880 e2688f767064ee85f218991fd60e9219 ""
+  "NSTC_project.aux" 1738349109.94609 1689 0b6e94dc692746df360f57eacc56c05e "xelatex"
+  "NSTC_project.bbl" 1738348820.87485 3341 74b2cfd42c963d27fd4e6c6c415f00f1 "biber NSTC_project"
+  "NSTC_project.run.xml" 1738349109.94938 2532 bf5d34fd162601ced171d1a54e20ede5 "xelatex"
+  "NSTC_project.tex" 1738349103.205 11514 49f5be4d83476370f16fad8aef4189b4 ""
+  "NSTC_project.toc" 1738349109.94954 697 e9d6a06155a2bb4ca798b4edb42d4adc "xelatex"
   (generated)
   "NSTC_project.aux"
   "NSTC_project.bcf"

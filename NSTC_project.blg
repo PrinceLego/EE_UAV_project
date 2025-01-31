@@ -1,19 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'NSTC_project.blg'
-[42] biber-darwin:340> INFO - === Fri Jan 31, 2025, 21:16:47
-[53] Biber.pm:419> INFO - Reading 'NSTC_project.bcf'
-[98] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
-[107] Biber.pm:4419> INFO - Processing section 0
-[112] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
-[113] bibtex.pm:1713> INFO - LaTeX decoding ...
-[119] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[123] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[123] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[123] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[123] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[123] bbl.pm:660> INFO - Writing 'NSTC_project.bbl' with encoding 'UTF-8'
-[123] bbl.pm:763> INFO - Output to NSTC_project.bbl
-[123] Biber.pm:131> WARN - I didn't find a database entry for 'einstein1905' (section 0)
-[123] Biber.pm:131> WARN - I didn't find a database entry for 'latexcompanion' (section 0)
-[123] Biber.pm:131> WARN - I didn't find a database entry for '鄭智銘2006分散式儲存架構下的遠距環境監測系統之建構' (section 0)
-[123] Biber.pm:133> INFO - WARNINGS: 3
+[110] biber-darwin:340> INFO - === 六  2  1, 2025, 02:40:20
+[129] Biber.pm:419> INFO - Reading 'NSTC_project.bcf'
+[210] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
+[228] Biber.pm:4419> INFO - Processing section 0
+[261] Biber.pm:4610> INFO - Looking for bibtex file 'NSTC_project.bib' for section 0
+[263] bibtex.pm:1713> INFO - LaTeX decoding ...
+[274] bibtex.pm:1519> INFO - Found BibTeX data source 'NSTC_project.bib'
+[337] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[337] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[337] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[338] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[349] bbl.pm:660> INFO - Writing 'NSTC_project.bbl' with encoding 'UTF-8'
+[350] bbl.pm:763> INFO - Output to NSTC_project.bbl
