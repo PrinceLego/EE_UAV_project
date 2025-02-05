@@ -7,6 +7,7 @@
 \usepackage{csquotes}               % 提供引用格式支援
 \usepackage{comment}                % 提供多行註解
 \usepackage{ragged2e}
+\usepackage{amsmath}
 
 %biber NSTC_project
 
@@ -203,6 +204,108 @@ Through a pre-established database, the UAV compares the images captured while f
 %==============================內文==============================
 \hspace{2em}
 
+
+\begin{align}
+    K &=
+    \begin{bmatrix}
+        f_{x}       & 0             & c_{x}     \\
+        0           & f_{y}         & c_{y}     \\
+        0           & 0             & 1
+    \end{bmatrix} 
+    \label{eq:k}
+\end{align}
+
+\begin{align}
+    R_{yaw} &=
+    \begin{bmatrix}
+        \cos\psi_{q}   & -\sin\psi_{q}  & 0 \\
+        \sin\psi_{q}   & \cos\psi_{q}   & 0 \\
+        0              & 0              & 1
+    \end{bmatrix} 
+    \label{eq:ryaw}
+\end{align}
+
+\begin{align}
+    R_{pitch} &=
+    \begin{bmatrix}
+        \cos\psi_{q}   & -\sin\psi_{q}  & 0 \\
+        \sin\psi_{q}   & \cos\psi_{q}   & 0 \\
+        0              & 0              & 1
+    \end{bmatrix} 
+    \label{eq:rpitch}
+\end{align}
+
+\begin{align}
+    R_{roll} &=
+    \begin{bmatrix}
+        \cos\psi_{q}   & -\sin\psi_{q}  & 0 \\
+        \sin\psi_{q}   & \cos\psi_{q}   & 0 \\
+        0              & 0              & 1
+    \end{bmatrix} 
+    \label{eq:rroll}
+\end{align}
+
+\begin{align}
+    f_{x}=\frac{W}{2\cdot\tan\left(\frac{HFOV}{2}\right)}
+    \label{eq:fx}
+    \\
+    f_{y}=\frac{H}{2\cdot\tan\left(\frac{VFOV}{2}\right)}
+    \label{eq:fy}
+\end{align}
+
+
+\begin{align}
+    c_{x}=\frac{W}{2}
+    \label{eq:cx}
+    \\
+    c_{y}=\frac{H}{2}
+    \label{eq:cy}
+\end{align}
+
+
+
+\begin{align}
+    R=R_{yaw}\cdot R_{pitch} \cdot R_{pitch}
+    \label{eq:R}
+\end{align}
+
+
+\begin{align}
+    \begin{bmatrix}
+        x       \\
+        y    \\
+        1        
+    \end{bmatrix} 
+     &=K^{-1}\cdot
+     \begin{bmatrix}
+        u       \\
+        v       \\
+        1        
+    \end{bmatrix} 
+    \label{eq:xy1}
+\end{align}
+
+\begin{align}
+    \begin{bmatrix}
+        x_{c}   \\
+        y_{c}   \\
+        z_{c}        
+    \end{bmatrix} 
+     &=R\cdot
+     \begin{bmatrix}
+        x       \\
+        y       \\
+        1        
+    \end{bmatrix} 
+    \label{eq:xcyczc}
+\end{align}
+
+\begin{align}
+    x_{w}=\frac{x_{c}}{z_{c}}
+    \label{eq:xw}\\
+    y_{w}=\frac{y_{c}}{z_{c}}
+    \label{eq:yw}
+\end{align}
 
 %==============================摘要內容==============================
 
