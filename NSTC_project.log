@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.24)  5 FEB 2025 22:05
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.24)  5 FEB 2025 23:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -197,7 +197,23 @@ Package csquotes Info: ... configuration file loaded successfully.
 File: csquotes.cfg 
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
- Excluding comment 'comment') (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.sty
+ Excluding comment 'comment') (/usr/local/texlive/2024/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip53
+\RaggedLeftLeftskip=\skip54
+\RaggedRightLeftskip=\skip55
+\CenteringRightskip=\skip56
+\RaggedLeftRightskip=\skip57
+\RaggedRightRightskip=\skip58
+\CenteringParfillskip=\skip59
+\RaggedLeftParfillskip=\skip60
+\RaggedRightParfillskip=\skip61
+\JustifyingParfillskip=\skip62
+\CenteringParindent=\skip63
+\RaggedLeftParindent=\skip64
+\RaggedRightParindent=\skip65
+\JustifyingParindent=\skip66
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
  (/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
@@ -269,14 +285,14 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@sectionciteorderinternal@0=\count333
 \blx@entrysetcounter=\count334
 \blx@biblioinstance=\count335
-\labelnumberwidth=\skip53
-\labelalphawidth=\skip54
-\biblabelsep=\skip55
-\bibitemsep=\skip56
-\bibnamesep=\skip57
-\bibinitsep=\skip58
-\bibparsep=\skip59
-\bibhang=\skip60
+\labelnumberwidth=\skip67
+\labelalphawidth=\skip68
+\biblabelsep=\skip69
+\bibitemsep=\skip70
+\bibnamesep=\skip71
+\bibinitsep=\skip72
+\bibparsep=\skip73
+\bibhang=\skip74
 \blx@bcfin=\read2
 \blx@bcfout=\write4
 \blx@langwohyphens=\language89
@@ -360,20 +376,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count404
 \c@pageref=\count405
 \c@savedpageref=\count406
-\shorthandwidth=\skip61
-\shortjournalwidth=\skip62
-\shortserieswidth=\skip63
-\shorttitlewidth=\skip64
-\shortauthorwidth=\skip65
-\shorteditorwidth=\skip66
-\locallabelnumberwidth=\skip67
-\locallabelalphawidth=\skip68
-\localshorthandwidth=\skip69
-\localshortjournalwidth=\skip70
-\localshortserieswidth=\skip71
-\localshorttitlewidth=\skip72
-\localshortauthorwidth=\skip73
-\localshorteditorwidth=\skip74
+\shorthandwidth=\skip75
+\shortjournalwidth=\skip76
+\shortserieswidth=\skip77
+\shorttitlewidth=\skip78
+\shortauthorwidth=\skip79
+\shorteditorwidth=\skip80
+\locallabelnumberwidth=\skip81
+\locallabelalphawidth=\skip82
+\localshorthandwidth=\skip83
+\localshortjournalwidth=\skip84
+\localshortserieswidth=\skip85
+\localshorttitlewidth=\skip86
+\localshortauthorwidth=\skip87
+\localshorteditorwidth=\skip88
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-unicode.def)
@@ -464,39 +480,39 @@ Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
-\cftparskip=\skip75
-\cftbeforetoctitleskip=\skip76
-\cftaftertoctitleskip=\skip77
-\cftbeforepartskip=\skip78
-\cftpartnumwidth=\skip79
-\cftpartindent=\skip80
-\cftbeforesecskip=\skip81
-\cftsecindent=\skip82
-\cftsecnumwidth=\skip83
-\cftbeforesubsecskip=\skip84
-\cftsubsecindent=\skip85
-\cftsubsecnumwidth=\skip86
-\cftbeforesubsubsecskip=\skip87
-\cftsubsubsecindent=\skip88
-\cftsubsubsecnumwidth=\skip89
-\cftbeforeparaskip=\skip90
-\cftparaindent=\skip91
-\cftparanumwidth=\skip92
-\cftbeforesubparaskip=\skip93
-\cftsubparaindent=\skip94
-\cftsubparanumwidth=\skip95
-\cftbeforeloftitleskip=\skip96
-\cftafterloftitleskip=\skip97
-\cftbeforefigskip=\skip98
-\cftfigindent=\skip99
-\cftfignumwidth=\skip100
+\cftparskip=\skip89
+\cftbeforetoctitleskip=\skip90
+\cftaftertoctitleskip=\skip91
+\cftbeforepartskip=\skip92
+\cftpartnumwidth=\skip93
+\cftpartindent=\skip94
+\cftbeforesecskip=\skip95
+\cftsecindent=\skip96
+\cftsecnumwidth=\skip97
+\cftbeforesubsecskip=\skip98
+\cftsubsecindent=\skip99
+\cftsubsecnumwidth=\skip100
+\cftbeforesubsubsecskip=\skip101
+\cftsubsubsecindent=\skip102
+\cftsubsubsecnumwidth=\skip103
+\cftbeforeparaskip=\skip104
+\cftparaindent=\skip105
+\cftparanumwidth=\skip106
+\cftbeforesubparaskip=\skip107
+\cftsubparaindent=\skip108
+\cftsubparanumwidth=\skip109
+\cftbeforeloftitleskip=\skip110
+\cftafterloftitleskip=\skip111
+\cftbeforefigskip=\skip112
+\cftfigindent=\skip113
+\cftfignumwidth=\skip114
 \c@lofdepth=\count422
 \c@lotdepth=\count423
-\cftbeforelottitleskip=\skip101
-\cftafterlottitleskip=\skip102
-\cftbeforetabskip=\skip103
-\cfttabindent=\skip104
-\cfttabnumwidth=\skip105
+\cftbeforelottitleskip=\skip115
+\cftafterlottitleskip=\skip116
+\cftbeforetabskip=\skip117
+\cfttabindent=\skip118
+\cfttabnumwidth=\skip119
 )
 
 Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
@@ -543,12 +559,12 @@ Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen155
 \l__xtemplate_tmp_int=\count424
 \l__xtemplate_tmp_muskip=\muskip22
-\l__xtemplate_tmp_skip=\skip106
+\l__xtemplate_tmp_skip=\skip120
 ))
 \l__xeCJK_tmp_int=\count425
 \l__xeCJK_tmp_box=\box54
 \l__xeCJK_tmp_dim=\dimen156
-\l__xeCJK_tmp_skip=\skip107
+\l__xeCJK_tmp_skip=\skip121
 \g__xeCJK_space_factor_int=\count426
 \l__xeCJK_begin_int=\count427
 \l__xeCJK_end_int=\count428
@@ -560,7 +576,7 @@ Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
 \c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
 \c__xeCJK_CM_class_int=\XeTeXcharclass7
 \c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
-\l__xeCJK_last_skip=\skip108
+\l__xeCJK_last_skip=\skip122
 \c__xeCJK_none_node=\count429
 \g__xeCJK_node_int=\count430
 \c__xeCJK_CJK_node_dim=\dimen157
@@ -568,10 +584,10 @@ Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
 \c__xeCJK_default_node_dim=\dimen159
 \c__xeCJK_CJK-widow_node_dim=\dimen160
 \c__xeCJK_normalspace_node_dim=\dimen161
-\c__xeCJK_default-space_node_skip=\skip109
-\l__xeCJK_ccglue_skip=\skip110
-\l__xeCJK_ecglue_skip=\skip111
-\l__xeCJK_punct_kern_skip=\skip112
+\c__xeCJK_default-space_node_skip=\skip123
+\l__xeCJK_ccglue_skip=\skip124
+\l__xeCJK_ecglue_skip=\skip125
+\l__xeCJK_punct_kern_skip=\skip126
 \l__xeCJK_indent_box=\box55
 \l__xeCJK_last_penalty_int=\count431
 \l__xeCJK_last_bound_dim=\dimen162
@@ -604,7 +620,7 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \l__xeCJK_fam_int=\count434
 \g__xeCJK_fam_allocation_int=\count435
 \l__xeCJK_verb_case_int=\count436
-\l__xeCJK_verb_exspace_skip=\skip113
+\l__xeCJK_verb_exspace_skip=\skip127
  (/usr/local/texlive/2024/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
 File: xeCJK.cfg 2022/08/05 v3.9.1 Configuration file for xeCJK package
 ))
@@ -785,8 +801,10 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \openout5 = `NSTC_project.toc'.
 
  [3]
-File: research_problem.jpg Graphic file (type bmp)
-<research_problem.jpg>
+File: research_problem1.jpg Graphic file (type bmp)
+<research_problem1.jpg>
+File: research_problem2.jpg Graphic file (type bmp)
+<research_problem2.jpg>
  [1] [2] (./NSTC_project.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -797,12 +815,12 @@ Package logreq Info: Writing requests to 'NSTC_project.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15627 strings out of 474773
- 358170 string characters out of 5757724
+ 15760 strings out of 474773
+ 362489 string characters out of 5757724
  1936839 words of memory out of 5000000
- 37587 multiletter control sequences out of 15000+600000
+ 37715 multiletter control sequences out of 15000+600000
  572867 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  79i,5n,93p,1168b,4759s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on NSTC_project.xdv (5 pages, 40556 bytes).
+Output written on NSTC_project.xdv (5 pages, 52784 bytes).

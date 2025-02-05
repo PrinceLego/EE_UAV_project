@@ -68,6 +68,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/comment/comment.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/comment/comment.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -192,9 +194,12 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/lmex10.tfm
 OUTPUT NSTC_project.toc
-INPUT ./research_problem.jpg
-INPUT ./research_problem.jpg
-INPUT ./research_problem.jpg
+INPUT ./research_problem1.jpg
+INPUT ./research_problem1.jpg
+INPUT ./research_problem1.jpg
+INPUT ./research_problem2.jpg
+INPUT ./research_problem2.jpg
+INPUT ./research_problem2.jpg
 INPUT NSTC_project.aux
 INPUT NSTC_project.run.xml
 OUTPUT NSTC_project.run.xml

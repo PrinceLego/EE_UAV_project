@@ -6,7 +6,7 @@
 \usepackage{amsmath}                % 提供數學環境和公式支持
 \usepackage{csquotes}               % 提供引用格式支援
 \usepackage{comment}                % 提供多行註解
-
+\usepackage{ragged2e}
 
 %biber NSTC_project
 
@@ -76,25 +76,17 @@
 %==============================摘要內容==============================
 
 \hspace{2em}
-近年來無人機(Unmanned Aerial Vehicle, UAV)整合各種附加設備且隨著飛行控制系統及自動化技術逐漸趨近成熟，
-在軍事、執法、科技應用領域不斷蓬勃發展，其中四軸旋翼無人機更具有安全、低成本等優點。
-攝影和錄影是無人機其中一項重要功能，因其擁有遠超一般攝影手段的視野角度，並且在空間上受到的環境限制相對較少。
-這使得無人機在捕捉廣大場景方面表現出色，遠勝於其他方法所能呈現的效果。
-目前中國部分城市已開始運用無人機進行科技執法\cite{chinatimes2019}，
-台北市與台中市警察局也以成立無人機機隊\cite{cna_2022}\cite{tai_2021}，進行交通觀測。
-透過無人機提供的視角，執法人員能夠快速監視交通情況。
+本研究計畫旨在開發一套智慧交通巡檢系統，利用四軸飛行載具（Unmanned Aerial Vehicle, UAV）進行違規停車車輛的偵測。
+不同於以往先判斷紅線位置再確認車輛是否違規的方法，本研究透過四軸飛行器的GPS定位資訊來判斷車輛是否違規，避免車輛停在紅線上或完全遮掩紅線的情況。
+由於系統僅檢視違規區域，此方法還能加快巡邏速度，提升巡邏效率。
 
-本研究計畫旨在開發一套智慧交通巡檢系統，以無人機為主要執行工具。
-該系統將透過事先建立的資料庫，使無人機能夠有效偵測違停車輛。
-與目前固定式照相桿等科技執法裝置相比，無人機具有大範圍監控的優勢，且能夠極大地降低設備成本。
-不同於先前方式先判斷紅線再確認車輛是否違規的方法。
-本計畫將透過無人機的GPS位置資訊來判斷車輛是否違規停放以避免車輛停放於紅線上或完全遮掩紅線的情形。
-由於系統僅針對違規區域進行檢查，因此能有效提升巡邏速度，縮短偵測與回報的時間。
-預期的成果是透過設計的電腦應用程式，能夠標示出不可停車的區域，而無人機則透過事先建立的資料庫，
-比對飛越指定區域所拍攝的影像，快速偵測違規車輛並記錄其位置，
-運用透視變換(Perspective Transformation)與空間對位(Georeferencing)達到對指定區域車輛違停進行有效監控的目標。
-此系統優勢在於高效率的監控，更在於能夠大幅減少設備投資成本，同時提升違停車輛檢測的靈活性和即時性。
+本系計畫統採用YOLOv7物件偵測模型進行即時車輛辨識，結合飛行器的姿態與相機拍攝角度，
+利用透視變換(Perspective Transformation)定位，將偵測結果轉換為地面上的絕對位置，這樣能夠快速確定違規停車車輛的位置。
+透過事先建立的資料庫，無人機將比對飛越指定區域所拍攝的影像，並即時偵測違規車輛，記錄其位置。
+該系統的優勢在於高效的監控能力，能夠大幅減少設備投資成本，並提升違規車輛檢測的靈活性和即時性。
 
+\vspace{1.5em}
+\noindent 關鍵字：即時物件偵測、四旋翼無人機、空間對位
 %==============================摘要內容==============================
 \newpage  % 插入換頁命令，將目錄和後續內容分開
 
@@ -102,9 +94,16 @@
 \section*{\centering Abstract}  % 只讓標題置中
 \addcontentsline{toc}{section}{Abstract}  % 手動加入摘要到目錄
 %==============================摘要內容==============================
+\hspace{2em}This research aims to develop an intelligent traffic inspection system utilizing unmanned aerial vehicles (UAVs) to detect illegally parked vehicles.
+Unlike conventional methods that first identify the location of red lines and then verify whether vehicles are violating parking regulations, this system determines whether a vehicle is in violation by using the UAV's GPS positioning information, preventing vehicles from parking on or completely covering red lines.
+Since the system only inspects the violation areas, this approach helps speed up patrol operations and enhance overall patrol efficiency.
 
+This research adopts the YOLOv7 object detection model for real-time vehicle identification, combined with the UAV's attitude and camera angle.
+By using perspective transformation, the system locates and converts the detection results into absolute ground positions, allowing for quick identification of illegally parked vehicles.
+Through a pre-established database, the UAV compares the images captured while flying over designated areas and immediately detects violation vehicles, recording their locations. The advantage of this system lies in its efficient monitoring capability, significantly reducing equipment investment costs and improving the flexibility and immediacy of illegal parking detection.
 
-
+\vspace{1.5em}
+\noindent Keyword: Real-time Object Detection, Quadcopter, Georeferencing
 %==============================摘要內容==============================
 \newpage  % 插入換頁命令，將目錄和後續內容分開
 
@@ -128,25 +127,40 @@
 
 \subsection{研究背景} 
 %==============================內文==============================
-\hspace{2em}無人機的應用已在軍事、執法及科技領域取得顯著成效。
-尤其在交通監控領域，無人機具有廣闊的視野和較低的環境限制，相較於傳統的固定式監控設備，無人機具備了更高的靈活性和效率。
-現有的交通執法裝置，如固定式照相桿，雖然能夠進行監控，但無法提供大範圍的即時監測，且設備成本較高。
-隨著無人機技術的進步，無人機在交通巡檢中展現了出色的潛力，尤其在違停車輛的偵測方面，無人機能夠提供更靈活且高效的解決方案。
+\hspace{2em}
+無人機（Unmanned Aerial Vehicle, UAV）技術近年來快速發展，整合各種附加設備並隨著飛行控制與自動化技術的成熟，在軍事、執法及科技應用領域取得顯著成效。
+四軸旋翼無人機因其安全性高、成本低的優勢，已廣泛應用於各種場景，其中攝影與錄影功能尤為重要。
+無人機擁有比傳統攝影設備更廣的視角，且受環境限制較小，使其在大範圍場景捕捉方面表現優異，優於傳統監控方式。
+
+在交通監控領域，無人機的靈活性和效率遠勝於傳統固定式監控設備，如固定式照相桿雖能執行監控任務，但監測範圍有限且設備成本較高。
+隨著無人機技術的進步，其在交通巡檢方面展現出極大的應用潛力，特別是在違規停車偵測方面，無人機能夠提供更靈活且高效的解決方案。
+目前，中國部分城市已開始運用無人機進行科技執法\cite{chinatimes2019}，台北市與台中市警察局亦已成立無人機機隊\cite{cna_2022}\cite{tai_2021}，用於交通監測與執法，並協助執法人員即時掌握交通狀況，提升執法效率。
+
+\begin{figure}[htbp]
+    \centering
+    \renewcommand{\figurename}{圖} %顯示圖1，不是figureat1
+    \includegraphics[width=0.7\textwidth]{research_problem1.jpg}     %圖片檔案名稱
+    \caption{無人機偵測違停車輛示意圖}    %圖片檔案名稱
+    \label{fig:research_problem1}    %為圖片添加標籤
+    %圖\ref{fig:無人機偵測違停車輛示意圖}
+\end{figure}
+
 %==============================內文==============================
 
 \subsection{研究動機} 
 %==============================內文==============================
 \hspace{2em}目前的研究和應用大多針對車輛橫跨紅線進行判斷，但對於完全蓋住紅線或停在紅線與白線交界處的情況，現有方法無法準確判斷車輛是否違停。
 因此，本研究計畫的動機在於利用無人機的GPS位置資訊來判斷車輛的違規情形，避免車輛完全遮掩紅線或停在紅線邊界處的情況。
-如圖\ref{fig:research_problem}。
+如圖\ref{fig:research_problem2}所示。
 並通過建立資料庫並使用無人機拍攝影像，比對車輛所處位置與違規區域，能夠快速偵測違規車輛並進行即時回報，進一步提升交通執法的效率與靈活性。
-\begin{figure}[h]
+
+\begin{figure}[htbp]
     \centering
     \renewcommand{\figurename}{圖} %顯示圖1，不是figureat1
-    \includegraphics[width=0.5\textwidth]{research_problem.jpg}     %圖片檔案名稱
+    \includegraphics[width=0.7\textwidth]{research_problem2.jpg}     %圖片檔案名稱
     \caption{本計畫研究問題之示意圖}    %圖片檔案名稱
-    \label{fig:research_problem}    %為圖片添加標籤
-    %\ref{fig:example1}
+    \label{fig:research_problem2}    %為圖片添加標籤
+    %圖\ref{fig:example1}
 \end{figure}
 
 %==============================內文==============================
@@ -195,6 +209,7 @@
 \vspace{-3.5em}  % 減少與上方內容的間距
 \renewcommand{\refname}{}  % 去除 "References" 標題
 \printbibliography  % 列出參考文獻
+
 \end{document}
 
 %=============================================================================================================================
@@ -209,7 +224,7 @@
         \includegraphics[width=0.5\textwidth]{截圖 2025-01-24 03.21.17.png}     %圖片檔案名稱
         \caption{這是圖片的標題}    %圖片檔案名稱
         \label{fig:example2}    %為圖片添加標籤
-        %\ref{fig:example1}
+        %如\ref{fig:example1}所示
     \end{figure}
     
     %==============================數學公式==============================

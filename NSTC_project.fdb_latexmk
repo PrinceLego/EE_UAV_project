@@ -1,5 +1,5 @@
 # Fdb version 4
-["biber NSTC_project"] 0 "NSTC_project.bcf" "NSTC_project.bbl" "NSTC_project" 1738764312.19584 0
+["biber NSTC_project"] 0 "NSTC_project.bcf" "NSTC_project.bbl" "NSTC_project" 1738768768.82077 0
   "NSTC_project.bcf" 0 -1 0 "xelatex"
   "NSTC_project.bib" 1738335540.0098 2380 dbdaf9ca79eb012e50eaa1c23a0601ca ""
   "your_bib_file.bib" 0 -1 0 ""
@@ -7,13 +7,13 @@
   "NSTC_project.bbl"
   "NSTC_project.blg"
   (rewritten before read)
-["xdvipdfmx"] 1738764311.83276 "NSTC_project.xdv" "NSTC_project.pdf" "NSTC_project" 1738764312.1967 0
-  "NSTC_project.xdv" 1738764311.67147 40556 143e8925daa07891a0bfa9e1a1ca8814 "xelatex"
+["xdvipdfmx"] 1738768768.49236 "NSTC_project.xdv" "NSTC_project.pdf" "NSTC_project" 1738768768.8217 0
+  "NSTC_project.xdv" 1738768768.33857 52784 c9cf0691734979a557e0bfed18b9b7c2 "xelatex"
   (generated)
   "NSTC_project.pdf"
   (rewritten before read)
-["xelatex"] 1738764310.61247 "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" "NSTC_project.xdv" "NSTC_project" 1738764312.19594 0
-  "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" 1738764308.93867 11915 47db28b8e51a1681b9465c3daad077e0 ""
+["xelatex"] 1738768767.07249 "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" "NSTC_project.xdv" "NSTC_project" 1738768768.82086 0
+  "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" 1738768766.92068 13464 007ad30a905df480c6fea386663d166b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm" 1254269338 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
@@ -89,6 +89,7 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd" 1616454256 1867 996fe743d88a01aca041ed22cc10e1bb ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.def" 1284153563 1620 fb1c32b818f2058eca187e5c41dfae77 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.sty" 1284153563 6187 b27afc771af565d3a9ff1ca7d16d0d46 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/ragged2e/ragged2e.sty" 1687466457 10085 3dececaeed388e31285c366e124c0c4e ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty" 1670275497 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/tocloft/tocloft.sty" 1578692495 36103 3e78d14f0f4b1a30560fea5e04de805d ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
@@ -98,12 +99,13 @@
   "/usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf" 1708706663 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "/usr/local/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1737650810 10850157 bde4cfcbaa765257cb63cb49a5eb9e78 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "NSTC_project.aux" 1738764311.66922 1871 bff59401ed10e2b310dcb8ba9dd4b196 "xelatex"
+  "NSTC_project.aux" 1738768768.33623 2058 5808e1b9e826d179fabf17a93eeeb5e3 "xelatex"
   "NSTC_project.bbl" 1738348820.87485 3341 74b2cfd42c963d27fd4e6c6c415f00f1 "biber NSTC_project"
-  "NSTC_project.run.xml" 1738764311.67129 2532 bf5d34fd162601ced171d1a54e20ede5 "xelatex"
-  "NSTC_project.tex" 1738764308.93867 11915 47db28b8e51a1681b9465c3daad077e0 ""
-  "NSTC_project.toc" 1738764311.6714 697 726d2a38707dbccec286810e05587ef3 "xelatex"
-  "research_problem.jpg" 1738763257.56762 27406 e0d31a997d56569885ee74a7c42db007 ""
+  "NSTC_project.run.xml" 1738768768.33841 2532 bf5d34fd162601ced171d1a54e20ede5 "xelatex"
+  "NSTC_project.tex" 1738768766.92068 13464 007ad30a905df480c6fea386663d166b ""
+  "NSTC_project.toc" 1738768768.33852 697 5c07cbd9fa1cfc8cde04038e2dbfcf87 "xelatex"
+  "research_problem1.jpg" 1738767849.31336 39896 eb88b5e2484c9cd00c47b20665e9498a ""
+  "research_problem2.jpg" 1738763257.56762 27406 e0d31a997d56569885ee74a7c42db007 ""
   (generated)
   "NSTC_project.aux"
   "NSTC_project.bcf"
