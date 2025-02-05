@@ -192,6 +192,9 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/lmex10.tfm
 OUTPUT NSTC_project.toc
+INPUT ./research_problem.jpg
+INPUT ./research_problem.jpg
+INPUT ./research_problem.jpg
 INPUT NSTC_project.aux
 INPUT NSTC_project.run.xml
 OUTPUT NSTC_project.run.xml
