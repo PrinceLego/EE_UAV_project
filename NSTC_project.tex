@@ -151,7 +151,7 @@ Through a pre-established database, the UAV compares the images captured while f
 %==============================內文==============================
 \hspace{2em}目前的研究和應用大多針對車輛橫跨紅線進行判斷，但對於完全蓋住紅線或停在紅線與白線交界處的情況，現有方法無法準確判斷車輛是否違停。
 因此，本研究計畫的動機在於利用無人機的GPS位置資訊來判斷車輛的違規情形，避免車輛完全遮掩紅線或停在紅線邊界處的情況。
-如圖\ref{fig:research_problem2}所示。
+如圖\ref{fig:research_problem2} 所示。
 並通過建立資料庫並使用無人機拍攝影像，比對車輛所處位置與違規區域，能夠快速偵測違規車輛並進行即時回報，進一步提升交通執法的效率與靈活性。
 
 \begin{figure}[htbp]
@@ -193,12 +193,76 @@ Through a pre-established database, the UAV compares the images captured while f
 %==============================內文==============================
 
 \section{\centering 文獻探討與回顧}
+
+\subsection{應用YOLOv7於車輛物件偵測}
 %==============================內文==============================
-\hspace{2em}
+\hspace{2em}違規停車偵測的部分預計使用物件偵測深度神經網路，找出車輛位置，以判斷車輛是否違規，利用物件偵測深度神經網路，不管是在標註樣本或是進行訓練上都可以節省許多的時間，並且擁有較高的準確度。
+本計畫採用知名的物件偵測深度神經網YOLO，其全名為You Only Look Once，首次出現於 2015 年，由 Joseph Redmon 和 Ali Farhadi 等人提出\cite{ren_2015}。
+YOLO能夠在實時情況下執行物體檢測，這意味著它可以快速地識別圖像中的物體，並且適用於需要即時反饋的應用場景，相較於其他物體檢測算法，YOLO算法在準確性上表現出色，能夠有效地檢測各種大小和形狀的物體，相對於其他複雜的物體檢測算法而言，實現起來相對簡單，這使得它受到廣泛的歡迎並且易於應用於各種領域，有實時檢測、高準確性、簡單易用、可擴展性等優點。
 
+\begin{figure}[htbp]
+    \centering
+    \renewcommand{\figurename}{圖} %顯示圖1，不是figureat1
+    \includegraphics[width=0.7\textwidth]{yolov7_1.jpg}     %圖片檔案名稱
+    \caption{YOLO各版本演進圖\cite{tencent2023}}    %圖片檔案名稱
+    \label{fig:yolov7_1}    %為圖片添加標籤
+    %如圖\ref{fig:yolov7_1}所示
+\end{figure}
 
+本研究選用YOLOv7\cite{wang2023yolov7}作為物件偵測算法，其為YOLO系列中的高效版本，具有優異的準確性與速度(如圖\ref{fig:yolov7_2} 所示)。YOLOv7屬於one stage物件偵測方法，能夠在單次運行中同時完成位置偵測與物件分類，相較於two stage方法，其運算速度更快，且準確度仍維持在可接受範圍內。
+YOLOv7在架構設計上延續了YOLOv3的基本結構，包括主幹網路(Backbone)、連接層(Neck)與檢測頭(Head)，並透過引入新技術進一步提升效能(如圖\ref{fig:yolov7_3} 所示)。
+Backbone負責特徵提取，輸入圖像經過多層卷積運算，從B1至B5逐步提取更加豐富的特徵資訊，特徵圖尺寸逐漸縮小，但通道數量增加；Neck透過上採樣(upsampling)擴增特徵圖，並透過橫向連結融合不同層級的特徵，使模型能夠有效學習多尺度資訊；
+Head則負責最終檢測結果的輸出，透過下採樣(subsampling)還原金字塔結構，最終產生多種解析度的特徵圖(P3、H4、H5)以適應不同大小的物件偵測需求。此外，YOLOv7透過模型重參數化(Re-parameterized model)改進模型結構以提高推理速度，並提出Extend-ELAN(E-ELAN)，在不破壞梯度傳播的情況下增強網路學習能力。
+透過這些技術，YOLOv7在物件偵測任務中展現了更優異的效能，能夠在高準確度與低延遲之間取得良好平衡，適用於多種應用場景。
+
+\begin{figure}[htbp]
+    \centering
+    \renewcommand{\figurename}{圖}                              %顯示圖1，不是figureat1
+    \includegraphics[width=0.7\textwidth]{yolov7_2.jpg}         %圖片檔案名稱
+    \caption{YOLOv7與其它模型比較\cite{wang2023yolov7}}           %圖片檔案名稱
+    \label{fig:yolov7_2}                                        %為圖片添加標籤
+    %(如圖\ref{fig:yolov7_2} 所示)
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \renewcommand{\figurename}{圖} %顯示圖1，不是figureat1
+    \includegraphics[width=0.7\textwidth]{yolov7_3.jpg}     %圖片檔案名稱
+    \caption{YOLOv7架構圖\cite{hackmd}}    %圖片檔案名稱
+    \label{fig:yolov7_3}    %為圖片添加標籤
+    %(如圖\ref{fig:yolov7_3} 所示)
+\end{figure}
 %==============================內文==============================
 
+\subsection{應用VBS-RTK之GPS定位}
+%==============================內文==============================
+\hspace{2em}在定位方面採用即時動態定位技術(Virtual Base Station Real-Time Kinematic, VBS-RTK)以獲得無人機精確位置，VBS-RTK是e-GNSS 即時動態定位系統之核心定位技術。
+其係採用多個衛星定位基準站所組成的 GNSS網絡來評估基準站涵蓋地區之定位誤差，再配合最鄰近的實體基準站觀測資料，產製一個虛擬的基準站做為RTK主站，所以移動站並不是接收某個實體基準站之實際觀測資料，而是經過誤差修正後的虛擬觀測數據。
+
+\begin{figure}[htbp]
+    \centering
+    \renewcommand{\figurename}{圖}                              %顯示圖1，不是figureat1
+    \includegraphics[width=0.7\textwidth]{vbsrtk.jpg}         %圖片檔案名稱
+    \caption{VBS-RTK運作流程圖\cite{egnss_2020}}           %圖片檔案名稱
+    \label{fig:vbsrtk}                                        %為圖片添加標籤
+    %(如圖\ref{fig:yolov7_2} 所示)
+\end{figure}
+%==============================內文==============================
+
+\subsection{影像處理與空間對位}
+%==============================內文==============================
+\hspace{2em}本計畫將利用鏡頭往斜下的角度拍攝而非垂直向下。以斜下角度拍攝的特點是相較於垂直向下拍攝可以擁有較大的視野範圍。
+這部分需應用航空攝影測量原理\cite{zhao2013}的中共線方程式(Collinearity equation)求得地面點在像片上對應之坐標，共線方程式係基於透視中心投影之原則下根據物點、像點、以及攝影時的參數所建立，求得每一地面點在相片上對應之坐標。
+
+\begin{figure}[htbp]
+    \centering
+    \renewcommand{\figurename}{圖}                              %顯示圖1，不是figureat1
+    \includegraphics[width=0.7\textwidth]{ce.jpg}         %圖片檔案名稱
+    \caption{共線式幾何示意圖\cite{tsao2018}}           %圖片檔案名稱
+    \label{fig:ce}                                        %為圖片添加標籤
+    %(如圖\ref{fig:yolov7_2} 所示)
+\end{figure}
+%==============================內文==============================
 
 \section{\centering 研究方法及流程}
 %==============================內文==============================

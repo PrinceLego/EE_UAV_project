@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.24)  6 FEB 2025 03:11
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.24)  7 FEB 2025 03:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -805,7 +805,20 @@ File: research_problem1.jpg Graphic file (type bmp)
 <research_problem1.jpg>
 File: research_problem2.jpg Graphic file (type bmp)
 <research_problem2.jpg>
- [1] [2] [3] [4] (./NSTC_project.aux)
+ [1] [2]
+File: yolov7_1.jpg Graphic file (type bmp)
+<yolov7_1.jpg>
+ [3]
+File: yolov7_2.jpg Graphic file (type bmp)
+<yolov7_2.jpg>
+File: yolov7_3.jpg Graphic file (type bmp)
+<yolov7_3.jpg>
+File: vbsrtk.jpg Graphic file (type bmp)
+<vbsrtk.jpg>
+ [4]
+File: ce.jpg Graphic file (type bmp)
+<ce.jpg>
+ [5] [6] [7] (./NSTC_project.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -815,12 +828,12 @@ Package logreq Info: Writing requests to 'NSTC_project.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15777 strings out of 474773
- 362704 string characters out of 5757724
- 1938839 words of memory out of 5000000
- 37732 multiletter control sequences out of 15000+600000
- 572867 words of font info for 76 fonts, out of 8000000 for 9000
+ 15871 strings out of 474773
+ 365327 string characters out of 5757724
+ 1941839 words of memory out of 5000000
+ 37820 multiletter control sequences out of 15000+600000
+ 572875 words of font info for 77 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,14n,93p,1168b,4759s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,14n,93p,1168b,4765s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on NSTC_project.xdv (7 pages, 73328 bytes).
+Output written on NSTC_project.xdv (10 pages, 112380 bytes).
