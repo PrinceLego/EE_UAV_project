@@ -1,17 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'NSTC_project.blg'
-[41] biber-darwin:340> INFO - === 五  2  7, 2025, 03:00:36
-[50] Biber.pm:419> INFO - Reading 'NSTC_project.bcf'
-[96] Biber.pm:979> INFO - Found 10 citekeys in bib section 0
-[104] Biber.pm:4419> INFO - Processing section 0
-[111] Biber.pm:4610> INFO - Looking for bibtex file 'NSTC_project.bib' for section 0
-[112] bibtex.pm:1713> INFO - LaTeX decoding ...
-[118] bibtex.pm:1519> INFO - Found BibTeX data source 'NSTC_project.bib'
-[162] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[162] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[163] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[163] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[170] bbl.pm:660> INFO - Writing 'NSTC_project.bbl' with encoding 'UTF-8'
-[173] bbl.pm:763> INFO - Output to NSTC_project.bbl
-[173] Biber.pm:131> WARN - Duplicate entry key: 'egnss_2020' in file 'NSTC_project.bib', skipping ...
-[173] Biber.pm:133> INFO - WARNINGS: 1
+[46] biber-darwin:340> INFO - === 二  2 11, 2025, 03:08:18
+[55] Biber.pm:419> INFO - Reading 'NSTC_project.bcf'
+[103] Biber.pm:979> INFO - Found 13 citekeys in bib section 0
+[113] Biber.pm:4419> INFO - Processing section 0
+[121] Biber.pm:4610> INFO - Looking for bibtex file 'NSTC_project.bib' for section 0
+[122] bibtex.pm:1713> INFO - LaTeX decoding ...
+[129] bibtex.pm:1519> INFO - Found BibTeX data source 'NSTC_project.bib'
+[178] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[178] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[178] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[178] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[186] bbl.pm:660> INFO - Writing 'NSTC_project.bbl' with encoding 'UTF-8'
+[191] bbl.pm:763> INFO - Output to NSTC_project.bbl
+[191] Biber.pm:131> WARN - Duplicate entry key: 'egnss_2020' in file 'NSTC_project.bib', skipping ...
+[191] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/9x/mmg05fk11q3879km534f4w4m0000gn/T/biber_tmp_2YJf/72fab39ebe19b95a4067a6bfb5e4cf2d_48989.utf8, line 52, warning: undefined macro "https://github.com/ultralytics/ultralytics"
+[191] Biber.pm:133> INFO - WARNINGS: 2

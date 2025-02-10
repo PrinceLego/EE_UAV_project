@@ -47,6 +47,7 @@
 
 \usepackage{xeCJK}                                      % 使用 xeCJK 宏包以支援中文
 \renewcommand{\figurename}{圖}                           % 設定圖表名稱
+\renewcommand{\tablename}{表}                            % 修改表格標題為「表」
 \setCJKmainfont[BoldFont={標楷體-繁}, ItalicFont={標楷體-繁}] {標楷體-繁}
 
 %=================================================={{{版面設定}}}==================================================
@@ -266,9 +267,103 @@ Head則負責最終檢測結果的輸出，透過下採樣(subsampling)還原金
 
 \section{\centering 研究方法及流程}
 %==============================內文==============================
+\hspace{2em}本計畫要設計的電腦應用程式，能夠標示出地圖中不可停車的區域，而無人機則透過事先建立的資料庫，
+比對飛越指定區域所拍攝的影像，快速辨識違規車輛並記錄其車牌號碼，運作流程如圖所示。
+
+本研究中所使用的無人機，為委託臺灣希望創新股份有限公司(Taiwan Hope Innovation Corporation)所特別製作的無人機，實驗中使用的無人機為含有 Pixhawk4 Orange飛控板、樹梅派、GPS、HUAWEI 4G USB 網卡和 Logitech C922 Pro Stream單目攝像頭(具體規格詳見表\ref{tab:C922 Pro})的四軸飛行器。
+錄製到的影像透過無人機上的樹梅派傳送到RTMP server \cite{chen2011}\cite{mark2018}。在由其他電腦從RTMP server取得影像並做辨識。為了使無人機飛行更順利，無人機上含有高性能的飛控板、精確的 GPS 定位系統，在兩者相互搭配下，使無人機有更穩定的飛行。
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{UAVphoto.jpg}     %圖片檔案名稱
+    \caption{本研究中所使用之無人機}    %圖片檔案名稱
+    \label{fig:UAVphoto}    %為圖片添加標籤
+    %如\ref{fig:example1}所示
+\end{figure}
+
+\begin{table}[ht]
+    \caption{C922 Pro Stream 規格}
+    \vspace{12pt} % 增加空格
+    \renewcommand{\arraystretch}{1.5} % 調整行距以垂直置中
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        項目   & 規格              \\ \hline
+        解析度  & 1280$\times$720 (HD) \\ \hline
+        幀率   & 30fps           \\ \hline
+        水平視角 & 70.42$^\circ$         \\ \hline
+        垂直視角 & 43.3$^\circ$           \\ \hline
+    \end{tabular}
+    \label{tab:C922 Pro}
+    %(具體規格詳見表\ref{tab:C922 Pro})
+\end{table}
+
+本實驗透過 4G 網路 連接無人機進行控制，並在電腦端使用 ROS 進行影像擷取與處理。
+此外，在影像處理的同時，還需透過 Mission Planner \cite{pixhawk_2023}即時控制無人機並獲取相關資訊。
+因此，筆記型電腦必須具備足夠的性能，以確保系統的穩定運行與即時回應。
+
+本計畫中，主要使用 MSI GP76 Leopard 筆記型電腦(具體規格詳見表\ref{tab:MSI GP76 Leopard})。該機型以高效能為主打，搭載 Intel® Core™ i7-10870H 處理器與 NVIDIA® GeForce® RTX 3060 顯示卡，並採用 MSI 最新技術 Cooler Boost 5。其雙散熱模組設計、強力雙風扇與多組熱管，加上四向散熱氣流設計，能有效排除廢熱，確保處理器與顯示卡在高負載運行時維持最佳性能。
+
+此外，本實驗也輔以 Apple MacBook M1 (具體規格詳見表\ref{tab:MacBook Air M1})進行部分運算與開發工作。MacBook M1 採用 Apple M1 晶片，內建 8 核心 CPU 及 7 核心 GPU，並配備 8GB 統一記憶體(Unified Memory)，提供優異的效能與低功耗表現。在本研究中，MacBook M1 主要用於 ROS 1 相關開發、Python 影像處理、無人機數據分析與程式開發。
+不過，由於 M1 晶片採用 ARM 架構，與傳統 x86 架構不同，在執行 ROS 及部分開發環境時，需透過 Docker 來確保軟體相容性。
+
+綜合而言，MSI GP76 Leopard 主要負責高負載的影像處理與無人機控制，而 MacBook M1 則用於負責高負載的影像處理、程式開發與數據分析，兩者搭配可有效提升本實驗的運算效率與工作流程。
+\begin{table}[ht]
+    \caption{MSI GP76 Leopard規格}
+    \vspace{12pt} % 增加空格
+    \renewcommand{\arraystretch}{1.5} % 調整行距以垂直置中
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{元件} & \textbf{規格}                 \\ \hline
+        中央處理器       & Intel(R) Core(TM) i7-10870H \\ \hline
+        記憶體         & DDR4 16GB                   \\ \hline
+        硬碟          & 1TB SSD                     \\ \hline
+        顯卡          & NVIDIA® GeForce® RTX 3060   \\ \hline
+        作業系統        & Ubuntu 18.04                \\ \hline
+        電池          & 4-Cell 65 Battery (Whr)     \\ \hline
+    \end{tabular}
+    \label{tab:MSI GP76 Leopard}
+    %(具體規格詳見表\ref{tab:MSI GP76 Leopard})
+\end{table}
+
+\begin{table}[ht]
+    \caption{MacBook Air M1規格}
+    \vspace{12pt} % 增加空格
+    \renewcommand{\arraystretch}{1.5} % 調整行距以垂直置中
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{元件} & \textbf{規格}            \\ \hline
+        處理器         & Apple M1 (8 核心 CPU)    \\ \hline
+        記憶體         & 8GB Unified Memory     \\ \hline
+        硬碟          & 256GB SSD              \\ \hline
+        顯示卡         & Apple M1 內建 GPU (7 核心) \\ \hline
+        作業系統        & macOS Sequoia          \\ \hline
+        電池          & 49.9Wh                 \\ \hline
+    \end{tabular}
+    \label{tab:MacBook Air M1}
+    %(具體規格詳見表\ref{tab:MacBook Air M1})
+\end{table}
+%==============================內文==============================
+
+\subsection{違規車輛偵測}
+%==============================內文==============================
 \hspace{2em}
 
+%==============================內文==============================
 
+\subsection{影像處理}
+%==============================內文==============================
+\hspace{2em}
+
+%==============================內文==============================
+
+\subsection{空間對位}
+%==============================內文==============================
+\hspace{2em}
+
+%==============================內文==============================
 \begin{align}
     K &=
     \begin{bmatrix}
@@ -403,37 +498,41 @@ Head則負責最終檢測結果的輸出，透過下採樣(subsampling)還原金
 
 \begin{comment}
     %==============================圖片==============================
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.7\textwidth]{截圖 2025-01-24 03.21.17.png}     %圖片檔案名稱
-        \caption{這是圖片的標題}    %圖片檔案名稱
-        \label{fig:example2}    %為圖片添加標籤
-        %如\ref{fig:example1}所示
-    \end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{截圖 2025-01-24 03.21.17.jpg}     %圖片檔案名稱
+    \caption{這是圖片的標題}    %圖片檔案名稱
+    \label{fig:example2}    %為圖片添加標籤
+    %如\ref{fig:example1}所示
+\end{figure}
     
     %==============================數學公式==============================
-    \begin{align}
-        a &= b + c \label{eq:1}
-        \\
-        d &= e - f \label{eq:2}
-        %式label{eq:2}
-    \end{align}
+\begin{align}
+    a &= b + c \label{eq:1}
+    \\
+    d &= e - f \label{eq:2}
+    %式label{eq:2}
+\end{align}
     
     %==============================表格==============================
-    \begin{table}[ht]
-        \centering
-        \begin{tabular}{|c|c|c|}
+\begin{table}[ht]
+    \caption{MSI GP76 Leopard規格}
+    \vspace{12pt} % 增加空格
+    \renewcommand{\arraystretch}{1.5} % 調整行距以垂直置中
+    \centering
+    \begin{tabular}{|c|c|}
         \hline
-        項目  & 數量 & 價格 \\
-        \hline
-        蘋果  & 10  & 30   \\
-        香蕉  & 5   & 15   \\
-        橙子  & 8   & 20   \\
-        \hline
-        \end{tabular}
-        \caption{水果表格}
-        \label{tab:fruits}
-    \end{table}
+        \textbf{元件} & \textbf{規格}                 \\ \hline
+        中央處理器       & Intel(R) Core(TM) i7-10870H \\ \hline
+        記憶體         & DDR4 16GB                   \\ \hline
+        硬碟          & 1TB SSD                     \\ \hline
+        顯卡          & NVIDIA® GeForce® RTX 3060   \\ \hline
+        作業系統        & Ubuntu 18.04                \\ \hline
+        電池          & 4-Cell 65 Battery (Whr)     \\ \hline
+    \end{tabular}
+    \label{tab:MSI GP76 Leopard}
+    %(具體規格詳見表\ref{tab:MSI GP76 Leopard})
+\end{table}
     
     \end{comment}
         

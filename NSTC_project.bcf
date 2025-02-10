@@ -2377,6 +2377,9 @@
     <bcf:citekey order="9" intorder="1">egnss_2020</bcf:citekey>
     <bcf:citekey order="10" intorder="1">zhao2013</bcf:citekey>
     <bcf:citekey order="11" intorder="1">tsao2018</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">chen2011</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">mark2018</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">pixhawk_2023</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
