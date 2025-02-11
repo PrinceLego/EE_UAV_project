@@ -238,6 +238,9 @@ INPUT ./ipm.jpg
 INPUT ./pt.jpg
 INPUT ./pt.jpg
 INPUT ./pt.jpg
+INPUT ./qgis.jpg
+INPUT ./qgis.jpg
+INPUT ./qgis.jpg
 INPUT NSTC_project.aux
 INPUT NSTC_project.run.xml
 OUTPUT NSTC_project.run.xml

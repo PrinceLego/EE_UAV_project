@@ -2388,6 +2388,9 @@
     <bcf:citekey order="20" intorder="1">lin_2001</bcf:citekey>
     <bcf:citekey order="21" intorder="1">bertozz1998stereo</bcf:citekey>
     <bcf:citekey order="22" intorder="1">mallot1991inverse</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">pyproj</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">QGIS_software</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">qgis_2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

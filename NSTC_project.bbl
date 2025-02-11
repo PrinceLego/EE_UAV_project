@@ -511,6 +511,68 @@
       \field{pages}{177\bibrangedash 185}
       \range{pages}{9}
     \endentry
+    \entry{pyproj}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=291901f4baad813a6c12a068424e5cb5}{%
+           family={pyproj},
+           familyi={p\bibinitperiod}}}%
+      }
+      \strng{namehash}{291901f4baad813a6c12a068424e5cb5}
+      \strng{fullhash}{291901f4baad813a6c12a068424e5cb5}
+      \strng{bibnamehash}{291901f4baad813a6c12a068424e5cb5}
+      \strng{authorbibnamehash}{291901f4baad813a6c12a068424e5cb5}
+      \strng{authornamehash}{291901f4baad813a6c12a068424e5cb5}
+      \strng{authorfullhash}{291901f4baad813a6c12a068424e5cb5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{pyproj Documentation}
+      \verb{urlraw}
+      \verb https://pyproj4.github.io/pyproj/stable/
+      \endverb
+      \verb{url}
+      \verb https://pyproj4.github.io/pyproj/stable/
+      \endverb
+    \endentry
+    \entry{QGIS_software}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=87a6547ad0a49e77c9adf891d4365979}{%
+           family={{QGIS Development Team}},
+           familyi={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{87a6547ad0a49e77c9adf891d4365979}
+      \strng{fullhash}{87a6547ad0a49e77c9adf891d4365979}
+      \strng{bibnamehash}{87a6547ad0a49e77c9adf891d4365979}
+      \strng{authorbibnamehash}{87a6547ad0a49e77c9adf891d4365979}
+      \strng{authornamehash}{87a6547ad0a49e77c9adf891d4365979}
+      \strng{authorfullhash}{87a6547ad0a49e77c9adf891d4365979}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{QGIS Geographic Information System}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.qgis.org
+      \endverb
+      \verb{url}
+      \verb https://www.qgis.org
+      \endverb
+    \endentry
+    \entry{qgis_2020}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{QGIS Official Website}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://qgis.org/en/site/about/index.html
+      \endverb
+      \verb{url}
+      \verb https://qgis.org/en/site/about/index.html
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

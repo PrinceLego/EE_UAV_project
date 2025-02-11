@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.24)  11 FEB 2025 15:50
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.24)  12 FEB 2025 07:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -844,7 +844,10 @@ File: ipm.jpg Graphic file (type bmp)
  [10]
 File: pt.jpg Graphic file (type bmp)
 <pt.jpg>
- [11] [12] [13] [14] [15] (./NSTC_project.aux)
+ [11] [12] [13]
+File: qgis.jpg Graphic file (type bmp)
+<qgis.jpg>
+ [14] [15] [16] (./NSTC_project.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -854,12 +857,12 @@ Package logreq Info: Writing requests to 'NSTC_project.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 16047 strings out of 474773
- 368774 string characters out of 5757724
- 1945839 words of memory out of 5000000
- 37986 multiletter control sequences out of 15000+600000
+ 16066 strings out of 474773
+ 369282 string characters out of 5757724
+ 1947839 words of memory out of 5000000
+ 38004 multiletter control sequences out of 15000+600000
  572875 words of font info for 77 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,14n,93p,1168b,4777s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,14n,93p,1168b,4779s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on NSTC_project.xdv (18 pages, 184608 bytes).
+Output written on NSTC_project.xdv (19 pages, 200052 bytes).
