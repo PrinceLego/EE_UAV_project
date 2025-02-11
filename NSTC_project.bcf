@@ -2379,7 +2379,15 @@
     <bcf:citekey order="11" intorder="1">tsao2018</bcf:citekey>
     <bcf:citekey order="12" intorder="1">chen2011</bcf:citekey>
     <bcf:citekey order="13" intorder="1">mark2018</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">pixhawk_2023</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">logitech</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">mavproxy_2023</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">pixhawk_2023</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">pixhawk_2023</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">zhao2013</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">tsao2018</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">lin_2001</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">bertozz1998stereo</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">mallot1991inverse</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

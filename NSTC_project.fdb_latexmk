@@ -1,5 +1,5 @@
 # Fdb version 4
-["biber NSTC_project"] 0 "NSTC_project.bcf" "NSTC_project.bbl" "NSTC_project" 1739215868.29295 0
+["biber NSTC_project"] 0 "NSTC_project.bcf" "NSTC_project.bbl" "NSTC_project" 1739260208.32207 0
   "NSTC_project.bcf" 0 -1 0 "xelatex"
   "NSTC_project.bib" 1738335540.0098 2380 dbdaf9ca79eb012e50eaa1c23a0601ca ""
   "your_bib_file.bib" 0 -1 0 ""
@@ -7,13 +7,13 @@
   "NSTC_project.bbl"
   "NSTC_project.blg"
   (rewritten before read)
-["xdvipdfmx"] 1739215867.95229 "NSTC_project.xdv" "NSTC_project.pdf" "NSTC_project" 1739215868.29391 0
-  "NSTC_project.xdv" 1739215867.80332 143940 01f03c3a0a3b74dabb23772e42535571 "xelatex"
+["xdvipdfmx"] 1739260207.95481 "NSTC_project.xdv" "NSTC_project.pdf" "NSTC_project" 1739260208.32312 0
+  "NSTC_project.xdv" 1739260207.80643 184608 dfb41ee09bef2a3174732137f754c9db "xelatex"
   (generated)
   "NSTC_project.pdf"
   (rewritten before read)
-["xelatex"] 1739215866.51396 "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" "NSTC_project.xdv" "NSTC_project" 1739215868.29304 0
-  "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" 1739215866.27855 30023 50cd4cf0152385de6298c9e2462c5aaf ""
+["xelatex"] 1739260206.4917 "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" "NSTC_project.xdv" "NSTC_project" 1739260208.32218 0
+  "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" 1739260204.61329 37477 93a2ab5be68c4440247b3f7416d6d567 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm" 1254269338 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
@@ -64,6 +64,7 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.sty" 1663185836 62761 3c92d495a9e03d7254b9a3266aa17164 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/ctex/ctexhook.sty" 1657829894 6505 33157acfddefdd8fd513e2308e07a435 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty" 1707868014 163194 e97577b0d79d363e11289d4e27baa8a4 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.cfg" 1532898934 549 c4adac819276241fea8eb79c5ab7b99e ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty" 1707868014 3484 ff877041166391bc5ca8a1e45614784e ""
@@ -99,19 +100,25 @@
   "/usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf" 1708706663 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "/usr/local/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1737650810 10850157 bde4cfcbaa765257cb63cb49a5eb9e78 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "NSTC_project.aux" 1739215867.80085 6540 cf2eeaa4a306bbc99e8f2c8a9d0f54b8 "xelatex"
-  "NSTC_project.bbl" 1739214498.90846 15020 1cc316128bab96666ab9fce485b963b0 "biber NSTC_project"
-  "NSTC_project.run.xml" 1739215867.80315 2532 bf5d34fd162601ced171d1a54e20ede5 "xelatex"
-  "NSTC_project.tex" 1739215866.27855 30023 50cd4cf0152385de6298c9e2462c5aaf ""
-  "NSTC_project.toc" 1739215867.80327 1349 e63f14daa912498c9deaa4afee4bcfc1 "xelatex"
+  "NSTC_project.aux" 1739260207.80339 8666 f2345a13d47624450fce522eee5cc98c "xelatex"
+  "NSTC_project.bbl" 1739256460.39273 21143 657264ae10c0c3a563b2a6379b10b23f "biber NSTC_project"
+  "NSTC_project.run.xml" 1739260207.80626 2532 bf5d34fd162601ced171d1a54e20ede5 "xelatex"
+  "NSTC_project.tex" 1739260204.61329 37477 93a2ab5be68c4440247b3f7416d6d567 ""
+  "NSTC_project.toc" 1739260207.80637 1354 3abbba478d94e17a4b2ba01393e55e8c "xelatex"
   "UAVphoto.jpg" 1739210773.44771 238387 8b6f3e8e4c4792e677becd55e5a8222b ""
+  "c922.jpg" 1739245926.17875 51333 ae204426d5e57750f1b91b255f760294 ""
   "ce.jpg" 1738867858.10904 128040 99aef22eca7852f9f30c343339ff7b64 ""
+  "ipm.jpg" 1739255749.87508 34179 437e0e09b87a0a466bda7dc619a1a2e7 ""
+  "missionplanner.jpg" 1739245162.40347 228287 d5518ce0acfe858b82234995e9aabdb6 ""
+  "pt.jpg" 1739257638.89668 200508 ef252eb076fa144b99308c0763682771 ""
   "research_problem1.jpg" 1738767849.31336 39896 eb88b5e2484c9cd00c47b20665e9498a ""
   "research_problem2.jpg" 1738763257.56762 27406 e0d31a997d56569885ee74a7c42db007 ""
   "vbsrtk.jpg" 1738867563.30393 30764 8f634ba1ba462a75e4135672696f5b11 ""
+  "xyzppr.jpg" 1739257590.76744 50418 45898cfb08b0c8842379948c37f9b573 ""
   "yolov7_1.jpg" 1738865363.92529 24725 0f3531c33489eda54397852243c2c49b ""
   "yolov7_2.jpg" 1738865390.28337 77137 ff422d05518a60298b26c2a4f0b12584 ""
   "yolov7_3.jpg" 1738865429.01014 99914 ed31576b04c321c7d42454754dd9ed0f ""
+  "yolov7car.jpg" 1739247801.67827 95312 c99ef9c7b3212f35a66adb917d1d9349 ""
   (generated)
   "NSTC_project.aux"
   "NSTC_project.bcf"
