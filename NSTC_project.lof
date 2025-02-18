@@ -1,0 +1,21 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces 無人機偵測違停車輛示意圖}}{1}{}%
+\contentsline {figure}{\numberline {2}{\ignorespaces 本計畫研究問題之示意圖}}{2}{}%
+\contentsline {figure}{\numberline {3}{\ignorespaces YOLO各版本演進圖\blx@tocontentsinit {0}\cite {tencent2023}}}{3}{}%
+\contentsline {figure}{\numberline {4}{\ignorespaces YOLOv7與其它模型比較\blx@tocontentsinit {0}\cite {wang2023yolov7}}}{4}{}%
+\contentsline {figure}{\numberline {5}{\ignorespaces YOLOv7架構圖\blx@tocontentsinit {0}\cite {hackmd}}}{4}{}%
+\contentsline {figure}{\numberline {6}{\ignorespaces VBS-RTK運作流程圖\blx@tocontentsinit {0}\cite {egnss_2020}}}{5}{}%
+\contentsline {figure}{\numberline {7}{\ignorespaces 共線式幾何示意圖\blx@tocontentsinit {0}\cite {tsao2018}}}{5}{}%
+\contentsline {figure}{\numberline {8}{\ignorespaces 研究流程圖}}{6}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces 本研究所使用之無人機}}{7}{}%
+\contentsline {figure}{\numberline {10}{\ignorespaces 本研究使用之單目攝像頭\blx@tocontentsinit {0}\cite {logitech}}}{7}{}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Mission Planner實際畫面\blx@tocontentsinit {0}\cite {pixhawk_2023}}}{8}{}%
+\contentsline {figure}{\numberline {12}{\ignorespaces YOLOv8違規車輛偵測示意圖}}{10}{}%
+\contentsline {figure}{\numberline {13}{\ignorespaces 無人機座標系統定義}}{11}{}%
+\contentsline {figure}{\numberline {14}{\ignorespaces 非垂直投影示意圖\blx@tocontentsinit {0}\cite {tsao2018}}}{12}{}%
+\contentsline {figure}{\numberline {15}{\ignorespaces 座標轉換流程圖}}{13}{}%
+\contentsline {figure}{\numberline {16}{\ignorespaces QGIS操作畫面\blx@tocontentsinit {0}\cite {qgis_2020}}}{15}{}%
+\contentsline {figure}{\numberline {17}{\ignorespaces mavlink}}{16}{}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Yolov7車輛偵測與追蹤}}{16}{}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Yolov7車輛偵測與追蹤-無人機實拍}}{17}{}%
+\contentsline {figure}{\numberline {20}{\ignorespaces 地板測試}}{17}{}%
+\contentsline {figure}{\numberline {21}{\ignorespaces 空間對測試}}{18}{}%

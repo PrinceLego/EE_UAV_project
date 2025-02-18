@@ -1,5 +1,5 @@
 # Fdb version 4
-["biber NSTC_project"] 0 "NSTC_project.bcf" "NSTC_project.bbl" "NSTC_project" 1739315327.35012 0
+["biber NSTC_project"] 0 "NSTC_project.bcf" "NSTC_project.bbl" "NSTC_project" 1739844733.10065 0
   "NSTC_project.bcf" 0 -1 0 "xelatex"
   "NSTC_project.bib" 1738335540.0098 2380 dbdaf9ca79eb012e50eaa1c23a0601ca ""
   "your_bib_file.bib" 0 -1 0 ""
@@ -7,13 +7,13 @@
   "NSTC_project.bbl"
   "NSTC_project.blg"
   (rewritten before read)
-["xdvipdfmx"] 1739315326.96089 "NSTC_project.xdv" "NSTC_project.pdf" "NSTC_project" 1739315327.3511 0
-  "NSTC_project.xdv" 1739315326.79677 200052 992a9a5b1535585f553959c3a41326f1 "xelatex"
+["xdvipdfmx"] 1739844731.09294 "NSTC_project.xdv" "NSTC_project.pdf" "NSTC_project" 1739844733.10171 0
+  "NSTC_project.xdv" 1739844730.92994 281560 3c4c139fe4e20cee0452f1d763db5e86 "xelatex"
   (generated)
   "NSTC_project.pdf"
   (rewritten before read)
-["xelatex"] 1739315325.389 "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" "NSTC_project.xdv" "NSTC_project" 1739315327.35021 0
-  "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" 1739315325.1449 39650 e02aeb3cc201a3a1552a02a8bd9fa045 ""
+["xelatex"] 1739844729.38369 "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" "NSTC_project.xdv" "NSTC_project" 1739844733.10074 0
+  "/Users/prince_lego/Desktop/progarm/LeTaX/NSTC_project/NSTC_project.tex" 1739844726.17261 42974 0f89a9b733da77c8b2746b2e3a30924e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm" 1254269338 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
@@ -100,15 +100,21 @@
   "/usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf" 1708706663 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "/usr/local/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1737650810 10850157 bde4cfcbaa765257cb63cb49a5eb9e78 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "NSTC_project.aux" 1739315326.79398 9250 0c0c3b00419f62ffdc1d5f437d253d9c "xelatex"
-  "NSTC_project.bbl" 1739315263.2369 23456 c92da9f10226e9793fc5c1e4ab43b0e0 "biber NSTC_project"
-  "NSTC_project.run.xml" 1739315326.79661 2532 bf5d34fd162601ced171d1a54e20ede5 "xelatex"
-  "NSTC_project.tex" 1739315325.1449 39650 e02aeb3cc201a3a1552a02a8bd9fa045 ""
-  "NSTC_project.toc" 1739315326.79673 1354 c8412dc093105a1114694b44424b242b "xelatex"
+  "1234567890.png" 1739240921.40682 866618 a73a7f58c3e0ea0eb0c876e945df11a2 ""
+  "NSTC_project.aux" 1739844730.92664 10881 a37c4634b119b60fba1cc65b62752ada "xelatex"
+  "NSTC_project.bbl" 1739809593.21288 23456 972d0b44e946f043af6196a368c90f5a "biber NSTC_project"
+  "NSTC_project.lof" 1739844730.92988 2198 fd17bca65010041ee5ab32d9d1f3fac0 "xelatex"
+  "NSTC_project.lot" 1739844730.92991 247 43f71f39a93719c073b67caf37fcc60e "xelatex"
+  "NSTC_project.run.xml" 1739844730.92975 2532 bf5d34fd162601ced171d1a54e20ede5 "xelatex"
+  "NSTC_project.tex" 1739844726.17261 42974 0f89a9b733da77c8b2746b2e3a30924e ""
+  "NSTC_project.toc" 1739844730.92986 1737 9dc2875a5e725abfc4b003eca1412dff "xelatex"
   "UAVphoto.jpg" 1739210773.44771 238387 8b6f3e8e4c4792e677becd55e5a8222b ""
   "c922.jpg" 1739245926.17875 51333 ae204426d5e57750f1b91b255f760294 ""
   "ce.jpg" 1738867858.10904 128040 99aef22eca7852f9f30c343339ff7b64 ""
+  "flow_chart.jpg" 1739808943.96956 413332 fa0a46b6cda30614eec8152bbd266ff1 ""
+  "frame_with_points_real.jpg" 1728892543.75538 447822 cd000d5bab1f5a3aea2bce007e6205e0 ""
   "ipm.jpg" 1739255749.87508 34179 437e0e09b87a0a466bda7dc619a1a2e7 ""
+  "mavlink.jpg" 1739815886.87211 73042 7eb6c01fe6583482712c783d68399646 ""
   "missionplanner.jpg" 1739245162.40347 228287 d5518ce0acfe858b82234995e9aabdb6 ""
   "pt.jpg" 1739257638.89668 200508 ef252eb076fa144b99308c0763682771 ""
   "qgis.jpg" 1739315305.54384 34939 11562a790f35e08ac13cf705c50c3d33 ""
@@ -116,6 +122,8 @@
   "research_problem2.jpg" 1738763257.56762 27406 e0d31a997d56569885ee74a7c42db007 ""
   "vbsrtk.jpg" 1738867563.30393 30764 8f634ba1ba462a75e4135672696f5b11 ""
   "xyzppr.jpg" 1739257590.76744 50418 45898cfb08b0c8842379948c37f9b573 ""
+  "yoloreal1.jpg" 1739816038.78875 142843 87c1602013922c648dbeb761ac241008 ""
+  "yoloreal2.png" 1739816221.53586 908948 e1fa23ac7ffcce3849505075a7c8ec46 ""
   "yolov7_1.jpg" 1738865363.92529 24725 0f3531c33489eda54397852243c2c49b ""
   "yolov7_2.jpg" 1738865390.28337 77137 ff422d05518a60298b26c2a4f0b12584 ""
   "yolov7_3.jpg" 1738865429.01014 99914 ed31576b04c321c7d42454754dd9ed0f ""
@@ -123,7 +131,9 @@
   (generated)
   "NSTC_project.aux"
   "NSTC_project.bcf"
+  "NSTC_project.lof"
   "NSTC_project.log"
+  "NSTC_project.lot"
   "NSTC_project.run.xml"
   "NSTC_project.toc"
   "NSTC_project.xdv"
