@@ -9,6 +9,8 @@
 \usepackage{ragged2e}
 \usepackage{amsmath}
 \usepackage{float}
+\usepackage{booktabs} % 專業表格格式
+\usepackage{siunitx}  % 數值對齊
 
 %biber NSTC_project
 
@@ -307,20 +309,20 @@ Head則負責最終檢測結果的輸出，透過下採樣(subsampling)還原金
 \end{figure}
 
 \begin{table}[H]
-    \caption{C922 Pro Stream 規格}
-    \vspace{12pt} % 增加空格
-    \renewcommand{\arraystretch}{1.5} % 調整行距以垂直置中
     \centering
-    \begin{tabular}{|c|c|}
-        \hline
-        項目   & 規格              \\ \hline
-        解析度  & 1280$\times$720 (HD) \\ \hline
-        幀率   & 30fps           \\ \hline
-        水平視角 & 70.42$^\circ$         \\ \hline
-        垂直視角 & 43.3$^\circ$           \\ \hline
-    \end{tabular}
+    \caption{C922 Pro Stream 規格}
+    \vspace{6pt} % 增加空格
     \label{tab:C922 Pro}
-    %(具體規格詳見表\ref{tab:C922 Pro})
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{項目} & \textbf{規格} \\
+        \midrule
+        解析度  & 1280$\times$720 (HD) \\
+        幀率  & 30fps \\
+        水平視角 & 70.42$^\circ$ \\
+        垂直視角  & 43.3$^\circ$ \\
+        \bottomrule
+    \end{tabular}
 \end{table}
 
 無人機控制方面透過4G網卡及VPN以遠端控制樹莓派，並且在樹莓派中我們透過MAVProxy(MAVLink Proxy)\cite{mavproxy_2023}指令將飛控板透過UDP方式連線至電腦端的Mission Planner\cite{pixhawk_2023}，
@@ -336,45 +338,32 @@ Mission Planner 提供了一個實時的飛行監控界面(如圖\ref{fig:missio
 此外，在影像處理的同時，還需透過 Mission Planner 即時控制無人機並藉由 MAVLink 協議獲取相關資訊。
 因此，筆記型電腦必須具備足夠的性能，以確保系統的穩定運行與即時回應。
 
-本計畫中，主要使用 MSI GP76 Leopard 筆記型電腦(具體規格詳見表\ref{tab:MSI GP76 Leopard})。該機型以高效能為主打，搭載 Intel® Core™ i7-10870H 處理器與 NVIDIA® GeForce® RTX 3060 顯示卡，並採用 MSI 最新技術 Cooler Boost 5。其雙散熱模組設計、強力雙風扇與多組熱管，加上四向散熱氣流設計，能有效排除廢熱，確保處理器與顯示卡在高負載運行時維持最佳性能。
-\begin{table}[H]
-    \caption{MSI GP76 Leopard規格}
-    \vspace{12pt} % 增加空格
-    \renewcommand{\arraystretch}{1.5} % 調整行距以垂直置中
-    \centering
-    \begin{tabular}{|c|c|}
-        \hline
-        \textbf{元件} & \textbf{規格}                 \\ \hline
-        中央處理器       & Intel\textregistered{} Core\texttrademark{} i7-10870H \\ \hline
-        記憶體         & DDR4 16GB                   \\ \hline
-        硬碟          & 1TB SSD                     \\ \hline
-        顯卡          & NVIDIAl\textregistered{} GeForcel\textregistered{} RTX 3060   \\ \hline
-        作業系統        & Ubuntu 18.04                \\ \hline
-        電池          & 4-Cell 65 Battery (Whr)     \\ \hline
-    \end{tabular}
-    \label{tab:MSI GP76 Leopard}
-    %(具體規格詳見表\ref{tab:MSI GP76 Leopard})
-\end{table}
-此外，本實驗也輔以 Apple MacBook M1 (具體規格詳見表\ref{tab:MacBook Air M1})進行部分運算與開發工作。MacBook M1 採用 Apple M1 晶片，內建 8 核心 CPU 及 7 核心 GPU，並配備 8GB 統一記憶體(Unified Memory)，提供優異的效能與低功耗表現。在本研究中，MacBook M1 主要用於 ROS 1 相關開發、Python 影像處理、無人機數據分析與程式開發。
+本計畫中，主要使用 MSI GP76 Leopard 筆記型電腦(具體規格詳見表\ref{tab:macbook_m1})。
+該機型以高效能為主打，搭載 Intel® Core™ i7-10870H 處理器與 NVIDIA® GeForce® RTX 3060 顯示卡，並採用 MSI 最新技術 Cooler Boost 5。其雙散熱模組設計、強力雙風扇與多組熱管，加上四向散熱氣流設計，能有效排除廢熱，確保處理器與顯示卡在高負載運行時維持最佳性能。
+
+本計畫也輔以 Apple MacBook M1 (具體規格詳見表\ref{tab:macbook_m1})進行部分運算與開發工作。
+MacBook M1 採用 Apple M1 晶片，內建 8 核心 CPU 及 7 核心 GPU，並配備 8GB 統一記憶體(Unified Memory)，提供優異的效能與低功耗表現。在本研究中，MacBook M1 主要用於 ROS 1 相關開發、Python 影像處理、無人機數據分析與程式開發。
 不過，由於 M1 晶片採用 ARM 架構，與傳統 x86 架構不同，在執行 ROS 及部分開發環境時，需透過 Docker 來確保軟體相容性。
+
 \begin{table}[H]
-    \caption{MacBook Air M1規格}
-    \vspace{12pt} % 增加空格
-    \renewcommand{\arraystretch}{1.5} % 調整行距以垂直置中
     \centering
-    \begin{tabular}{|c|c|}
-        \hline
-        \textbf{元件} & \textbf{規格}            \\ \hline
-        處理器         & Apple M1 (8 核心 CPU)    \\ \hline
-        記憶體         & 8GB Unified Memory     \\ \hline
-        硬碟          & 256GB SSD              \\ \hline
-        顯示卡         & Apple M1 內建 GPU (7 核心) \\ \hline
-        作業系統        & macOS Sequoia          \\ \hline
-        電池          & 49.9Wh                 \\ \hline
+    \caption{MacBook Air M1 與比較機種規格}
+    \vspace{6pt} % 增加空格
+    \label{tab:macbook_m1}
+    \begin{tabular}{lll}
+        \toprule
+        \textbf{元件} & \textbf{MacBook Air M1} & \textbf{MSI GP76 Leopard} \\
+        \midrule
+        處理器 (CPU)  & Apple M1 (8 核心) & Intel\textregistered{} Core\texttrademark{} i7-10870H \\
+        記憶體 (RAM)  & 8GB Unified Memory & 16GB DDR4 \\
+        硬碟 (Storage) & 256GB SSD  & 1TB SSD \\
+        顯示卡 (GPU)  & Apple M1 內建 GPU (7 核心) & NVIDIA\textregistered{} GeForce\textregistered{} RTX 3060 \\
+        作業系統 (OS)  & macOS Sequoia & Ubuntu 18.04 \\
+        電池容量 (Battery) & 49.9Wh & 65Wh \\
+        \bottomrule
     \end{tabular}
-    \label{tab:MacBook Air M1}
-    %(具體規格詳見表\ref{tab:MacBook Air M1})
 \end{table}
+
 綜合而言，MSI GP76 Leopard 主要負責高負載的影像處理與無人機控制，而 MacBook M1 則用於負責高負載的影像處理、程式開發與數據分析，兩者搭配可有效提升本實驗的運算效率與工作流程。
 %==============================內文==============================
 
@@ -610,7 +599,8 @@ QGIS支持各種地理信息數據格式，並提供豐富的工具與功能，�
 
 \section{\centering 研究結果}
 %==============================內文==============================
-\hspace{2em}研究結果主要分成幾部分，包含飛行路徑規劃、IMU資料獲取
+\hspace{2em}研究結果主要分成幾部分，包含飛行路徑規劃、\
+IMU資料獲取
 
 %==============================內文==============================
 
@@ -668,6 +658,23 @@ QGIS支持各種地理信息數據格式，並提供豐富的工具與功能，�
 \subsection{逆透視變換}
 %==============================內文==============================
 \hspace{2em}
+
+
+\begin{table}[H]
+    \centering
+    \caption{誤差}
+    \vspace{6pt} % 增加空格
+    \label{tab:error_comparison}
+    \begin{tabular}{lS[table-format=2.2]S[table-format=2.2]}
+        \toprule
+        MAE(m) & 0.007  \\
+        MRE(\%) & 1.168 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{frame_with_points_real.jpg}     %圖片檔案名稱
@@ -746,5 +753,22 @@ QGIS支持各種地理信息數據格式，並提供豐富的工具與功能，�
     %(具體規格詳見表\ref{tab:MSI GP76 Leopard})
 \end{table}
     
+\begin{table}[H]
+    \centering
+    \caption{C922 Pro Stream 規格}
+    \vspace{6pt} % 增加空格
+    \label{tab:C922 Pro}
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{項目} & \textbf{規格} \\
+        \midrule
+        解析度  & 1280$\times$720 (HD) \\
+        幀率  & 30fps \\
+        水平視角 & 70.42$^\circ$ \\
+        垂直視角  & 43.3$^\circ$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
     \end{comment}
         
