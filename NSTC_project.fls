@@ -271,6 +271,9 @@ INPUT ./pt.jpg
 INPUT ./qgis.jpg
 INPUT ./qgis.jpg
 INPUT ./qgis.jpg
+INPUT ./missionplanner2.jpg
+INPUT ./missionplanner2.jpg
+INPUT ./missionplanner2.jpg
 INPUT ./mavlink.jpg
 INPUT ./mavlink.jpg
 INPUT ./mavlink.jpg

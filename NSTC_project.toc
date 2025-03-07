@@ -14,16 +14,15 @@
 \contentsline {subsection}{\numberline {2.2}應用VBS-RTK之GPS定位}{4}{}%
 \contentsline {subsection}{\numberline {2.3}影像處理與空間對位}{5}{}%
 \contentsline {section}{\numberline {3}\centering 研究方法及流程}{5}{}%
-\contentsline {subsection}{\numberline {3.1}飛行路徑規劃}{9}{}%
-\contentsline {subsection}{\numberline {3.2}違規車輛偵測}{9}{}%
-\contentsline {subsection}{\numberline {3.3}影像處理}{10}{}%
-\contentsline {subsection}{\numberline {3.4}空間對位}{14}{}%
+\contentsline {subsection}{\numberline {3.1}違規車輛偵測}{9}{}%
+\contentsline {subsection}{\numberline {3.2}影像處理}{9}{}%
+\contentsline {subsection}{\numberline {3.3}空間對位}{14}{}%
 \contentsline {section}{\numberline {4}\centering 研究結果}{15}{}%
 \contentsline {subsection}{\numberline {4.1}飛行路徑規劃}{15}{}%
 \contentsline {subsection}{\numberline {4.2}IMU資料獲取}{15}{}%
-\contentsline {subsection}{\numberline {4.3}車輛偵測}{15}{}%
+\contentsline {subsection}{\numberline {4.3}車輛偵測}{16}{}%
 \contentsline {subsection}{\numberline {4.4}影像處理}{16}{}%
-\contentsline {subsection}{\numberline {4.5}逆透視變換}{16}{}%
+\contentsline {subsection}{\numberline {4.5}逆透視變換}{17}{}%
 \contentsline {subsection}{\numberline {4.6}空間對位}{17}{}%
 \contentsline {section}{\numberline {5}\centering 結論}{18}{}%
 \contentsline {section}{\numberline {6}\centering 參考文獻}{18}{}%
