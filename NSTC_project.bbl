@@ -573,6 +573,30 @@
       \verb https://qgis.org/en/site/about/index.html
       \endverb
     \endentry
+    \entry{taiwantrafficvideo}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=92e7b1358c322693581061e8002ba643}{%
+           family={{台南市政府交通局}},
+           familyi={台\bibinitperiod}}}%
+      }
+      \strng{namehash}{92e7b1358c322693581061e8002ba643}
+      \strng{fullhash}{92e7b1358c322693581061e8002ba643}
+      \strng{bibnamehash}{92e7b1358c322693581061e8002ba643}
+      \strng{authorbibnamehash}{92e7b1358c322693581061e8002ba643}
+      \strng{authornamehash}{92e7b1358c322693581061e8002ba643}
+      \strng{authorfullhash}{92e7b1358c322693581061e8002ba643}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{台南市交通監視器影片}
+      \verb{urlraw}
+      \verb https://trafficvideo2.tainan.gov.tw/a750dee6
+      \endverb
+      \verb{url}
+      \verb https://trafficvideo2.tainan.gov.tw/a750dee6
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

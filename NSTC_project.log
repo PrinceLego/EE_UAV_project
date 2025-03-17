@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.24)  7 MAR 2025 15:31
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.24)  18 MAR 2025 01:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -932,19 +932,31 @@ File: qgis.jpg Graphic file (type bmp)
  [14]
 File: missionplanner2.jpg Graphic file (type bmp)
 <missionplanner2.jpg>
+ [15]
 File: mavlink.jpg Graphic file (type bmp)
 <mavlink.jpg>
 File: yoloreal2.png Graphic file (type bmp)
 <yoloreal2.png>
- [15]
+ [16]
 File: yoloreal1.jpg Graphic file (type bmp)
 <yoloreal1.jpg>
- [16]
+ [17]
+File: 11.jpg Graphic file (type bmp)
+<11.jpg>
+ [18]
+File: 33.jpg Graphic file (type bmp)
+<33.jpg>
+File: 22.jpg Graphic file (type bmp)
+<22.jpg>
+ [19]
+File: 44.jpg Graphic file (type bmp)
+<44.jpg>
 File: frame_with_points_real.jpg Graphic file (type bmp)
 <frame_with_points_real.jpg>
+ [20]
 File: 1234567890.png Graphic file (type bmp)
 <1234567890.png>
- [17] [18] [19] (./NSTC_project.aux)
+ [21] [22] [23] [24] (./NSTC_project.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -954,12 +966,12 @@ Package logreq Info: Writing requests to 'NSTC_project.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20064 strings out of 474773
- 491351 string characters out of 5757724
- 1943839 words of memory out of 5000000
- 41962 multiletter control sequences out of 15000+600000
+ 20140 strings out of 474773
+ 493923 string characters out of 5757724
+ 1951839 words of memory out of 5000000
+ 42034 multiletter control sequences out of 15000+600000
  572875 words of font info for 77 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,14n,93p,1168b,4777s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,14n,93p,1168b,4779s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on NSTC_project.xdv (24 pages, 290232 bytes).
+Output written on NSTC_project.xdv (29 pages, 352124 bytes).

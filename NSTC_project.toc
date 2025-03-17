@@ -19,10 +19,9 @@
 \contentsline {subsection}{\numberline {3.3}空間對位}{14}{}%
 \contentsline {section}{\numberline {4}\centering 研究結果}{15}{}%
 \contentsline {subsection}{\numberline {4.1}飛行路徑規劃}{15}{}%
-\contentsline {subsection}{\numberline {4.2}IMU資料獲取}{15}{}%
+\contentsline {subsection}{\numberline {4.2}無人機資料獲取}{15}{}%
 \contentsline {subsection}{\numberline {4.3}車輛偵測}{16}{}%
-\contentsline {subsection}{\numberline {4.4}影像處理}{16}{}%
-\contentsline {subsection}{\numberline {4.5}逆透視變換}{17}{}%
-\contentsline {subsection}{\numberline {4.6}空間對位}{17}{}%
-\contentsline {section}{\numberline {5}\centering 結論}{18}{}%
-\contentsline {section}{\numberline {6}\centering 參考文獻}{18}{}%
+\contentsline {subsection}{\numberline {4.4}逆透視變換}{18}{}%
+\contentsline {subsection}{\numberline {4.5}空間對位}{21}{}%
+\contentsline {section}{\numberline {5}\centering 結論}{22}{}%
+\contentsline {section}{\numberline {6}\centering 參考文獻}{23}{}%
